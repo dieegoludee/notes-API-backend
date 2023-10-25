@@ -117,7 +117,7 @@ app.use((req, res) => {
   })
 })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 // en Express se inicia el server de manera asíncrona, asi que se le pasa un callBack
 // para que cuando se termine el servidor de levantarse me muestra el c.log
 app.listen(PORT, () => {
